@@ -1,0 +1,29 @@
+{
+  "name": "actividad-code-coverage",
+  "version": "1.0.0",
+  "description": "Aplicación académica de operaciones matemáticas preparada para un ambiente efímero en Render.",
+  "main": "src/servidor.js",
+  "scripts": {
+    "start": "node src/servidor.js",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint .",
+    "lint:demo": "eslint ejemplos/operaciones-con-errores.js --no-ignore",
+    "lint:fix": "eslint . --fix",
+    "verify": "npm run lint && npm test"
+  },
+  "keywords": [
+    "jest",
+    "code-coverage",
+    "pruebas"
+  ],
+  "author": "Pedro Pablo Rodríguez Gómez",
+  "license": "MIT",
+  "engines": {
+    "node": "20.x"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.1",
+    "jest": "^30.5.2"
+  }
+}
